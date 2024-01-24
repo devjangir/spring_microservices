@@ -7,7 +7,9 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Account {
+public class Account extends BaseEntity {
+    @Column(name = "customer_id")
+    private Long customerId;
     @Id
     @Column(name = "account_number")
     private Long accountNumber;

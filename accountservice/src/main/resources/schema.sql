@@ -5,8 +5,8 @@ create table IF NOT EXISTS `customer` (
     `mobile_number` varchar(100) NOT NULL,
     `created_at` date NOT NULL,
     `created_by` varchar(100) NOT NULL,
-    `updated_at` date NOT NULL,
-    `updated_by` varchar(100) NOT NULL
+    `updated_at` date DEFAULT NULL,
+    `updated_by` varchar(100) DEFAULT NULL
 );
 
 create table if not exists `account` (
@@ -16,6 +16,6 @@ create table if not exists `account` (
     `branch_address` varchar(200) NOT NULL,
     `created_at` date NOT NULL,
     `created_by` varchar(100) NOT NULL,
-    `updated_at` date NOT NULL,
-    `updated_by` varchar(100) NOT NULL
+    `updated_at` date DEFAULT NULL,
+    `updated_by` varchar(100) DEFAULT NULL
 );
